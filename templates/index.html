@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="stylesheet" href="static/stylesheet/style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <title>Flack</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand ml-3 mt-2" href="{{url_for('index')}}">
+                <img src="static/img/logo.png"width="35" height="35" alt="logo">
+                Flack
+            </a>
+          </nav>
+    </header>
+      
+    <div class="bg-modal">
+        <div class="modal-content">
+            <h1>Start chatting with Flack!</h1>
+            <form>
+                <div class="row mt-4">
+                    <div class="col-lg-8 col-sm-10 m-auto">
+                        <input type="text" class="form-control mb-3" id="inlineFormInput" placeholder="Your name">
+                    </div>
+                    <div class="col-lg-8 col-sm-10 m-auto">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-auto m-auto">
+                        <button type="submit" class="btn btn-warning btn-lg">Start chatting</button>
+                    </div>
+                </div>
+            </form>
+            <p>Provided username will be shown to other users with every sent message.</p>
+        </div>
+    </div>
+
+</body>
+</html>

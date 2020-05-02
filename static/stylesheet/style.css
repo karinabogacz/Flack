@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("https://vectr.com/tmp/a1Rr4oJVRZ/d4LZQwPl5Y.svg?width=1800&height=1800&select=d4LZQwPl5Ypage0")
+}
+
+.svg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+} 
+
+.navbar{
+    /* background-image:  linear-gradient(#cc0c43, #99163b); */
+    padding-bottom: 20%;
+}
+.navbar a{
+    display: inline;
+    font-family: 'Sonsie One', cursive;
+    letter-spacing: 2px;
+    font-size: 28px;
+    color: rgb(0, 0, 0) !important;
+    text-transform: uppercase;
+}
+.bg-modal{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(20, 20, 0, 0.3);
+}
+.modal-content{
+    width: 60%;
+    height: 70%;
+    background-color: white;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    padding: 25px;
+}
+.modal-content h1{
+    color: rgb(94, 94, 94);
+    font-weight: 350;
+    text-align: center;
+}
+
+.btn-warning{
+    margin-top: 35px;
+    background-color: #f5f125;
+    width: 200px;
+    border: none;
+}
+.btn-warning:hover{
+    background-color: #f5d625;
+}
+.modal-content p{
+    color: rgb(185, 185, 185);
+    margin-left: 25px;
+    margin-top: 70px;
+}
+
+@media(max-width: 400px){
+    .modal-content{
+        width: 90% !important;
+    }
+}
+@media(max-width: 1000px){
+    .modal-content{
+        width: 80%;
+    }
+}
