@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/stylesheet/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+
+<body>
+    <div class="container-fluid pl-0">
+        <div class="row">
+            <nav class="col-3">
+                <div class="section px-3 pt-3">
+                    <img src="/static/img/account.png" height="40" width="40" alt="">
+                    <p class="d-inline mx-2">{{session["user"]}}</p>
+                </div>
+                <div class="section px-3">
+                    <hr>
+                    <p>Channels</p>
+                    <ul class="pl-3" style="list-style: none">
+                        <li>#channel1</li>
+                        <li>#channel2</li>
+                        <li>#general</li>
+                        <li>#cars</li>
+                    </ul>
+                </div>
+                <div class="section px-3">
+                    <hr>
+                    <p>Private messages</p>
+                    <ul>
+                        <li>Bob</li>
+                        <li>Rose</li>
+                        <li>Kate</li>
+                    </ul>
+                    <p style="font-weight: 460; margin-left: 5px;">+ Invite people</p>
+                </div>
+                <div class="section px-3 pb-4">
+                    <hr>
+                    <p>People</p>
+                    <ul>
+                        <li>John</li>
+                        <li>Harry</li>
+                    </ul>
+                </div>
+            </nav>
+            {%block content%}
+            {%endblock%}
+        </div>
+    </div>
+    
+
+</body>
+</html>

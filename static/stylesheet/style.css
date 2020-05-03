@@ -1,4 +1,4 @@
-body{
+.home{
     margin: 0;
     padding: 0;
     background-image: url("https://vectr.com/tmp/a1Rr4oJVRZ/d4LZQwPl5Y.svg?width=1800&height=1800&select=d4LZQwPl5Ypage0")
@@ -36,7 +36,7 @@ body{
 }
 .modal-content{
     width: 60%;
-    height: 70%;
+    min-height: 70%;
     background-color: white;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
@@ -73,3 +73,18 @@ body{
         width: 80%;
     }
 }
+.section{
+    background-color: rgb(255, 255, 70);
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    padding: 0.5px;
+    margin: 0;
+}
+.alert-warning{
+    background-color: #fdff9a;
+    padding: 10px 10px 40px 10px;
+    margin-top: 40px;
+    font-size: 26px;
+    text-align: center;
+}
+

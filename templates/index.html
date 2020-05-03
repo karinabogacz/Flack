@@ -10,7 +10,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
     <title>Flack</title>
 </head>
-<body>
+<body class="home">
 
     <header>
         <nav class="navbar navbar-light">
@@ -24,17 +24,22 @@
     <div class="bg-modal">
         <div class="modal-content">
             <h1>Start chatting with Flack!</h1>
-            <form>
+            {% if message%}
+                <div class="alert alert-danger mt-3" role="alert">
+                    {{message}}
+                </div>
+            {% endif %}
+            <form action="{{url_for('index')}}" method="POST">
                 <div class="row mt-4">
                     <div class="col-lg-8 col-sm-10 m-auto">
-                        <input type="text" class="form-control mb-3" id="inlineFormInput" placeholder="Your name">
+                        <input type="text" name="name" class="form-control mb-3" id="inlineFormInput" placeholder="Your name">
                     </div>
                     <div class="col-lg-8 col-sm-10 m-auto">
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">@</div>
                             </div>
-                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                            <input type="text" name="username" class="form-control" id="inlineFormInputGroup" placeholder="Username">
                         </div>
                     </div>
                 </div>
