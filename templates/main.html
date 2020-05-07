@@ -6,17 +6,36 @@
 
 <main class="col">
     <div class="alert alert-warning" role="alert">
-        Create a channel +
+        Create a channel
+        <small class="d-block my-3" style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deserunt voluptate perspiciatis architecto odit eligendi.</small>
+        <button type="button" class="btn btn-outline-warning button-modal" data-toggle="modal" data-target="#exampleModalCenter"aria-hidden="true">Create</button>
+    </div>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Name your channel</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body mt-3">
+
+          <div class="form-group">
+            <input type="text" placeholder="Channel name" class="form-control" autocomplete="off">
+          </div>
+          <button type="submit" data-dismiss="modal" class="btn btn-warning button-form d-block ml-auto mt-4 p-2" style="max-width: 75px;">Create</button>
+            
+          </div>
+        </div>
+      </div>
     </div>
     <ul class="list-group my-4">
         <li class="list-group-item disabled" aria-disabled="true">Existing channels:</li>
     </ul>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">#general</li>
-        <li class="list-group-item">#cars</li>
-        <li class="list-group-item">#general</li>
-        <li class="list-group-item">#cars</li>
+    <ul class="list-group list-group-flush channels">
     </ul>
+    
 </main>
 
 

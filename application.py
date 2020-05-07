@@ -1,7 +1,7 @@
 import os
 import requests
 
-from flask import Flask, render_template, request, session, redirect, url_for
+from flask import Flask, render_template, jsonify, request, session, redirect, url_for
 from flask_session import Session
 from flask_socketio import SocketIO, emit
 
@@ -17,7 +17,7 @@ Session(app)
 
 @app.route("/", methods = ["GET", "POST"])
 def index():
-    #User can only sign by post request
+
     if request.method == "POST": 
 
         username = request.form.get("username")
@@ -40,4 +40,9 @@ def channels():
         return redirect(url_for("index"))
 
     return render_template("main.html")
+
+@socketio.on("create channel")
+def channel(data):
+    channel = data["channel"]
+    emit("announce channel", {"channel": channel}, broadcast=True)
 

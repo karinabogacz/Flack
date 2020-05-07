@@ -46,6 +46,7 @@
     color: rgb(94, 94, 94);
     font-weight: 350;
     text-align: center;
+    margin-top: 10px;
 }
 
 .btn-warning{
@@ -57,7 +58,7 @@
 .btn-warning:hover{
     background-color: #f5d625;
 }
-.modal-content p{
+small{
     color: rgb(185, 185, 185);
     margin-left: 25px;
     margin-top: 70px;
@@ -66,6 +67,9 @@
 @media(max-width: 400px){
     .modal-content{
         width: 90% !important;
+    }
+    main{
+        display: none !important;
     }
 }
 @media(max-width: 1000px){
@@ -82,9 +86,14 @@
 }
 .alert-warning{
     background-color: #fdff9a;
-    padding: 10px 10px 40px 10px;
+    padding: 10px 10px 20px 10px;
     margin-top: 40px;
-    font-size: 26px;
+    font-size: 28px;
     text-align: center;
 }
-
+.col-form-label{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
